@@ -1,0 +1,67 @@
+{% extends 'core/home_base.html' %}
+{% block pagetitle %}Home{% endblock %}
+{% block home-nav-current-session-extra-class %}border-bottom{% endblock %}
+
+{% block home-main %}
+  <div class="row">
+      <div class="col-md-8">
+        <div class="card mt-4 border-0">
+          <div class="card-block">
+            {% if request.user.current_session %}
+            {% include 'cards/judgments_table_card.html' %}
+            {% else %}
+            {% include 'cards/sessions/no_session_create_card.html' %}
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% if request.user.current_session %}
+      <div class="ml-auto col-md-4">
+        <h6 class="mt-4 text-primary">
+          Session details
+          <a class="badge float-right text-muted shadow-none session-details"
+             data-toggle="modal" data-target="#sessionModal" href="#"
+               data-is-shared-session={% if not current_session_owner %}"true"{% else %}"false"{% endif %}
+               data-session-id={% if user.current_session.username != user %}"{{ activated_shared_session.uuid }}"{% else %}"{{ user.current_session.uuid }}"{% endif %}
+               data-session-title="{{ user.current_session.topic.title }}"
+          ><i class="fas fa-info-circle"></i> Show more</a>
+        </h6>
+        <div class="list-group mt-4 pb-4 border-bottom">
+          <div class=" border-0 p-0">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1">{{ user.current_session.topic.title }}</h6>
+                {% if user.current_session.topic.number %}<small>#{{ user.current_session.topic.number }}</small>{% endif %}
+              </div>
+              {% if user.current_session.topic.description %}<p class="mb-1">{{ user.current_session.topic.description }}</p>{% endif %}
+              <span class="small text-muted">Created by {{ user.current_session.username }} on {{ user.current_session.created_at }}</span>
+          </div>
+      </div>
+
+
+      <h6 class="mt-4 mb-3 text-primary">
+        Users <span class="badge badge-light">{{ collaborators|length }}</span>
+        <a class="badge float-right text-muted shadow-none"
+             data-toggle="modal" data-target="#shareSessionModal" href="#"
+          ><i class="fas fa-share"></i> Share</a>
+      </h6>
+
+      <div class="d-flex flex-row pb-4 border-bottom">
+        {% for collaborator in collaborators %}
+          {% if collaborator.profile_picture %}
+          {# TODO: Get their identicon #}
+          {% else %}
+            <script>createIdenticonImage('{{collaborator}}', 30, 30, "mr-1 border")</script>
+          {% endif %}
+        {% endfor %}
+      </div>
+
+      {% if current_session_owner %}
+{#      <h6 class="mt-4 text-primary">#}
+{#        Manage session#}
+{#      </h6>#}
+      {% endif %}
+
+    </div>
+      {% endif %}
+  </div>
+{% endblock %}

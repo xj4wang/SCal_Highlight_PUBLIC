@@ -1,0 +1,63 @@
+{% load crispy_forms_tags %}
+
+<div class="modal" id="createSessionModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header pb-0">
+        <div class="modal-title text-primary d-flex flex-grow-1 ">
+          <div class="d-flex flex-column flex-grow-1 ">
+          <h5 class="text-primary">Create session</h5>
+          <h6 class="text-muted">Please create the session as instructed by the experimenter.</h6>
+          </div>
+
+          <div class="d-flex align-items-center flex-grow-1 ">
+            <ul class="nav nav-pills nav-justified flex-column flex-md-row" role="tablist">
+              <!-- <li class="nav-item align-self-center">
+                <a class="nav-link active" data-toggle="pill" href="#pills-custom-topic" role="tab">Custom</a>
+              </li> -->
+              <li class="nav-item align-self-center">
+                <a class="nav-link active" data-toggle="pill" href="#pills-predefined-topic" role="tab">Pre-defined</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="tab-content">
+          <!-- Custom topic tab -->
+          <!-- <div class="tab-pane fade active show" id="pills-custom-topic" role="tabpanel">
+            <div class="row">
+              <div class="col-md-12 mt-3">
+                    <form method="POST" action="{% url 'core:home' %} " enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% crispy form_custom %}
+                    </form>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Predefined topic tab -->
+          <div class="tab-pane fade active show" id="pills-predefined-topic" role="tabpanel">
+            <div class="row">
+              <div class="col-md-12 mt-3">
+                  <form method="POST" action="{% url 'core:home' %}">
+                  {% csrf_token %}
+                  {% crispy form_predefined %}
+                  </form>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

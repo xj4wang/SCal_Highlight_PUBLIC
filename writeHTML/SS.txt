@@ -1,0 +1,44 @@
+<li>
+<input type="checkbox" id="education2a" name="education" value="education2a">
+<label for="education2a">Economics</label>
+</li>
+<li>
+<input type="checkbox" id="education2b" name="education" value="education2b">
+<label for="education2b">Geography</label>
+</li>
+<li>
+<input type="checkbox" id="education2c" name="education" value="education2c">
+<label for="education2c">Interdisciplinary studies</label>
+</li>
+<li>
+<input type="checkbox" id="education2d" name="education" value="education2d">
+<label for="education2d">Area studies</label>
+</li>
+<li>
+<input type="checkbox" id="education2e" name="education" value="education2e">
+<label for="education2e">Ethic and cultural studies</label>
+</li>
+<li>
+<input type="checkbox" id="education2f" name="education" value="education2f">
+<label for="education2f">Gender and sexuality studies</label>
+</li>
+<li>
+<input type="checkbox" id="education2g" name="education" value="education2g">
+<label for="education2g">Organizational studies</label>
+</li>
+<li>
+<input type="checkbox" id="education2h" name="education" value="education2h">
+<label for="education2h">Political science</label>
+</li>
+<li>
+<input type="checkbox" id="education2i" name="education" value="education2i">
+<label for="education2i">Psychology</label>
+</li>
+<li>
+<input type="checkbox" id="education2j" name="education" value="education2j">
+<label for="education2j"> Sociology</label>
+</li>
+<li>
+<input type="checkbox" id="education2k" name="education" value="education2k">
+<label for="education2k">Other (please specify)</label>
+</li>

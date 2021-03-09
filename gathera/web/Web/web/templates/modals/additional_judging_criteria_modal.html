@@ -1,0 +1,33 @@
+<div class="modal" id="additionalJudgingCriteriaModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary">Additional Judging Criteria</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        {% for criteria in additional_judging_criteria %}
+        <h6 class="text-secondary">{{ criteria.name }}</h6>
+
+          {% if criteria.description %}
+            <p class="text-muted">{{ criteria.description }}</p>
+          {% else %}
+          <div class="alert alert-light" role="alert">
+            <div class="d-flex flex-row">
+              <h5 class="mb-0 -items-center align-self-center pr-3"><i class="fas fa-info-circle"></i></h5>
+              <span class="align-self-center">No information is provided for "{{ criteria.name }}".</span>
+            </div>
+          </div>
+          {% endif %}
+
+        {% endfor %}
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% load i18n has_group crispy_forms_tags static %}
+
+{% block extra_head %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.js" type="application/javascript"></script>
+{% endblock %}
+
+{% block main %}
+<div class="row border-bottom">
+  <div class="offset-0 offset-sm-3 col-12 col-md-7 mt-0 mt-sm-2">
+    <nav class="nav">
+        {% block home-nav %}
+        <div class="d-flex home-nav">
+			{% if not request.user.current_session %}
+			<a class="nav-link mx-4 px-2 py-3 text-muted {% block home-nav-consent-form-extra-class %}{% endblock %}" href="{% url 'core:consent' %}">Consent Form</a>
+			<a class="nav-link mx-4 px-2 py-3 text-muted {% block home-nav-demographics-survey-extra-class %}{% endblock %}" href="{% url 'core:demographics' %}">Demographics Survey</a>
+			{% endif %}
+			<a class="nav-link mx-4 px-2 py-3 text-muted {% block home-nav-current-session-extra-class %}{% endblock %}" href="{% url 'core:home' %}">Current Session</a>
+			{% if request.user.current_session %}
+			<a class="nav-link mx-4 px-2 py-3 text-muted {% block home-nav-judgments-extra-class %}{% endblock %}" href="{% url 'judgment:view' %}">Judgments</a>
+			{% endif %}
+			<a class="nav-link mx-4 px-2 py-3 text-muted {% block home-nav-sessions-extra-class %}{% endblock %}" href="{% url 'core:sessions' %}">Other sessions</a>
+        </div>
+        {% endblock %}
+    </nav>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3 d-none d-sm-block" style="margin-top: -4rem;">
+    <div class="card mx-3 mb-2">
+        <div class="card-block">
+          <div class="center-text mb-3">
+            <script>createIdenticonImage('{{ user }}', 260, 260, "img-fluid")</script>
+          </div>
+          <h4 class="mb-0">{{ user }}</h4>
+        </div>
+    </div>
+
+{#    <div class="card mx-3 mb-2 border-0">#}
+{#        <div class="card-block pb-3 border-bottom">#}
+{#          <h6>User information</h6>#}
+{#        </div>#}
+{#    </div>#}
+
+
+  </div>
+  <div class="col-md-9">
+    {% block home-main %}
+
+    {% endblock %}
+  </div>
+
+</div>
+
+{% endblock %}
+
+{% block extra_scripts %}
+<script>
+// This is to update progrss. Not needed at the moment.
+function percentageToDegrees(percentage) { return percentage / 100 * 360; }
+$(".progress").each(function() {
+
+  var value = $(this).attr('data-value');
+  var left = $(this).find('.progress-left .progress-bar');
+  var right = $(this).find('.progress-right .progress-bar');
+
+  if (value > 0) {
+    if (value <= 50) {
+      right.css('transform', 'rotate(' + percentageToDegrees(value) + 'deg)')
+    } else {
+      right.css('transform', 'rotate(180deg)')
+      left.css('transform', 'rotate(' + percentageToDegrees(value - 50) + 'deg)')
+    }
+  }
+
+})
+
+</script>
+
+{% endblock %}

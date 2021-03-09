@@ -1,0 +1,32 @@
+<li>
+<input type="checkbox" id="education4a" name="education" value="education4a">
+<label for="education4a">Computer sciences</label>
+</li>
+<li>
+<input type="checkbox" id="education4b" name="education" value="education4b">
+<label for="education4b">Logic</label>
+</li>
+<li>
+<input type="checkbox" id="education4c" name="education" value="education4c">
+<label for="education4c">Mathematics</label>
+</li>
+<li>
+<input type="checkbox" id="education4d" name="education" value="education4d">
+<label for="education4d">Pure mathematics</label>
+</li>
+<li>
+<input type="checkbox" id="education4e" name="education" value="education4e">
+<label for="education4e">Applied mathematics</label>
+</li>
+<li>
+<input type="checkbox" id="education4f" name="education" value="education4f">
+<label for="education4f"> Statistics</label>
+</li>
+<li>
+<input type="checkbox" id="education4g" name="education" value="education4g">
+<label for="education4g">System science</label>
+</li>
+<li>
+<input type="checkbox" id="education4h" name="education" value="education4h">
+<label for="education4h">Other (please specify)</label>
+</li>

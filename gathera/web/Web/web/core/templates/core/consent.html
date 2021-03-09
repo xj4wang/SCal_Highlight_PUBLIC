@@ -1,0 +1,156 @@
+{% extends 'core/home_base.html' %}
+{% load crispy_forms_tags %}
+{% block pagetitle %}Consent Form{% endblock %}
+{% block home-nav-consent-form-extra-class %}border-bottom{% endblock %}
+
+{% block home-main %}
+  <div class="row top-bottom-margin">
+  
+    <div class="col-sm-12">
+		<h2 class="text-dark mb-1">Consent Form</h2>
+		<span class="text-muted">
+		Please take your time to carefully read over the CONSENT LETTER and fill out the CONSENT FORM before starting the experiement.<br>
+		</span>
+		<br>
+	</div>
+	
+	<div class="col-md-9">	
+		<div style="border:2px ridge; padding:2px; height:50vh; overflow-y:scroll;">
+			<h6 class="mt-4"><b><center><u>CONSENT LETTER</u></center></b></h6>
+			
+			<h6 class="mt-4">Title of Project:</h6>
+			<span class="text-muted">
+			Measuring the utility of key-term highlighting for human-in-the-loop retrieval systems.<br>
+			</span>
+			
+			<h6 class="mt-4">Principal Investigator:</h6>
+			<span class="text-muted">
+			Maura R. Grossman, 1-519-888-4567, ext. 37522, maura.grossman@uwaterloo.ca.<br>
+			</span>
+			
+			<h6 class="mt-4">Student Investigators:</h6>
+			<span class="text-muted">
+			(Jean) Xue Jun Wang, 519-589-6778, xj4wang@uwaterloo.ca.<br>
+			</span>
+			
+			<h6 class="mt-4">Summary of the Project:</h6>
+			<span class="text-muted">
+			Participants in this study will be shown documents and asked to judge its relevance to particular topics. They will be asked to assess 4 rounds of documents, each round lasting for 20 minutes. At the end of each round, you will be asked to answer three short multiple-choice questions about the documents you had just read.<br>
+			<br>
+			Participants will be using a computer to complete the study. The data collected will be helpful in measuring the utility of key-term highlighting in information retrieval systems.<br>
+			</span>
+			
+			<h6 class="mt-4">Study Eligibility:</h6>
+			<span class="text-muted">
+			In order to participate in the study, you must:<br>
+			1- Be fluent in English<br>
+			2- Have access to and do not need assistance with using a computer with a keyboard, mouse, and monitor.<br>
+			</span>
+			
+			<h6 class="mt-4">Procedure:</h6>
+			<span class="text-muted">
+			Your participation in this study is voluntary. Participation involves judging the relevance of COVID-19 related documents to given topics and answering multiple choice questions regarding these documents.<br>				
+			An example of a topic is “coronavirus response to weather changes”.<br>
+			An example of a multiple choice question is:<br>
+			Different weather and climate is most likely to affect the _____ of COVID-19.<br>
+			a) Transmission<br>
+			b) Symptoms<br>
+			c) Treatment<br>
+			d) Operation<br>
+			e) Placebo<br>
+			<br>
+			The study will take approximately 2 hours. We will record your judgments for each document and your answers on the multiple choice questions.<br>
+			<br>
+			The University of Waterloo temporarily collects your participant ID and computer IP address to avoid duplicate responses in the dataset but will not collect information that could identify you personally. We will collect demographic/background information, specifically age, gender, field of study, and education.<br>
+			<br>
+			<b><i>You may decline to answer any question that you prefer not to answer.</i></b> You may stop participating in the study at any point and withdraw your consent without penalty. You can request your data be removed from the study up until May 1, 2021 as it is not possible to withdraw your data once papers and publications have been submitted to publishers.<br>
+			</span>
+			
+			<h6 class="mt-4">Expectations for your Participation:</h6>
+			<span class="text-muted">
+			The entire study will be done online. You will need a personal laptop/desktop with internet access and a browser to participate and complete the study. Participation will be done through Microsoft Teams (a free conferencing tool supported by the University of Waterloo) on your laptop/desktop. You will not be asked to turn on your camera. However, we will ask you to share your screen of our website (and nothing else) for the duration of the experiment to allow us to guide you through the experiment, it will not be recorded or stored.<br>
+			<br>
+			Please work on a given task from start to finish. If you need to take a break, please do so between tasks. Once you have made a relevancy judgement or answered a question, do not attempt to go back and change it. All answers are final.<br>
+			<br>
+			For this scientific research study, we ask for your full attention. Please do not use your mobile phones, listen to music, or use the computer for other activities such as checking email or viewing web pages during the study.<br>
+			</span>
+			
+			<h6 class="mt-4">Confidentiality and Data Security:</h6>
+			<span class="text-muted">
+			A portion of the study you will be completing is an online survey hosted on a University of Waterloo server. When information is transmitted or stored on the internet, privacy cannot be guaranteed. There is always a risk your responses may be intercepted by a third party (e.g., government agencies, hackers). The University of Waterloo temporarily collects your participant ID and computer IP address to avoid duplicate responses in the dataset but will not collect information that could identify you personally.<br>
+			<br>
+			You will be issued an anonymous identifier (ID) as a participant in this study. The mapping from your name to the ID will be maintained for the length of the study in case you forget the ID. This mapping will be kept on an encrypted and password-protected server at the University of Waterloo during the study and will be destroyed at the completion of the study. After the study concludes, there will be no way to identify you to the data. All data collected will be kept on an encrypted and password-protected server at the University of Waterloo, will be retained for a minimum of 7 years, and will be used for research purposes only. The encrypted and password-protected server mentioned above is veggie1.cs.uwaterloo.ca which is owned by Maura Grossman and managed by the CSCF (Computer Science Computing Facility) at the University of Waterloo.<br>
+			<br>
+			We may refer to individual participants when describing the results of the study, and in these cases, we will always refer to “participant 1” or some other similar anonymous name. Your name will never appear in any publication that results from this study. We may choose to distribute the data collected to other researchers. All data will be anonymized at the conclusion of the study and prior to any distribution, but each participant’s data will remain identifiable as coming from an individual, i.e. “participant 1”, “participant 2”, etc. We will not publicly share this data, i.e. the data would only be made available to other researchers for research purposes.<br>
+			</span>
+			
+			<h6 class="mt-4">Remuneration for Your Participation:</h6>
+			<span class="text-muted">
+			You will be remunerated $30 CAD through electronic transfer (e-transfer) to an email address of your choosing after the completion of the study.<br>
+			<br>
+			The amount received is taxable. It is your responsibility to report this amount for income tax purposes.<br>
+			<br>
+			During your participation in our study, you may decline to answer any question that you prefer not to answer and stop participating in the study at any point and withdraw your consent without penalty.<br>
+			<br>
+			You can request your data be removed from the study up until May 1, 2021 as it is not possible to withdraw your data once papers and publications have been submitted to publishers.<br>
+			<br>
+			You will still receive the maximum remuneration of $30 CAD.<br>
+			</span>
+			
+			<h6 class="mt-4">Risks and Benefits:</h6>
+			<span class="text-muted">
+			There is minimal risk to you from participation in this study. Computer use and searching for relevant documents are common everyday activities and pose no anticipated risk greater than that encountered in everyday activities.<br>
+			However, as the study involves reading scientific information about COVID-19 taken from peer reviewed publications, it has the potential risk related to increasing anxiety or worry. You may end the study early if they find it overwhelming without any repercussions.<br>
+			None of the information presented is beyond what you might encounter in their everyday life.<br>
+			<br>
+			There are no direct benefits to you from participation. However, we hope the study will provide results that can assist the system design of text retrieval systems that will benefit society at large.<br>
+			</span>
+			
+			<h6 class="mt-4">Research Ethics Clearance:</h6>
+			<span class="text-muted">
+			This study has been reviewed and received ethics clearance through a University of Waterloo Research Ethics Board (ORE#42529). If you have questions for the Board contact the Office of Research Ethics, at 1-519-888-4567 ext. 36005 or ore-ceo@uwaterloo.ca.<br>
+			<br>
+			<b><i>Thank you for your assistance in this project.</i></b>
+			</span>
+			
+			
+		</div>
+		
+		<center>
+		<h6 class="mt-4 text-primary">CONSENT FORM</h6>
+		<span class="text-muted">
+		By signing this consent form, you are not waiving your legal rights or releasing the investigator(s) or involved institution(s) from their legal and professional responsibilities.<br>
+		<br>
+		</span>		
+		</center>
+		
+		<span class="text-muted">
+		I agree to participate in a study being conducted by (Jean) Xue Jun Wang, a MMath student, under the supervision of Dr. Maura Grossman, in the University of Waterloo’s Cheriton School of Computer Science. I have made this decision based on the information I have received in the information letter. I have had the opportunity to ask questions and request any additional details I wanted about this study.<br>
+		<br>
+		If I participate in this study, I will be asked to judge the relevancy of documents to particular topics and answer three multiple choice questions (per topic) in regard to these documents.<br>
+		<br>
+		As a participant in this study, I am aware that I may decline to answer any question that I prefer not to answer and that I may stop participating in the study at any point and withdraw my consent.<br>
+		I can request my data be removed from the study up until May 1, 2021 as it is not possible to withdraw my data once papers and publications have been submitted to publishers.
+		I will still receive the maximum remuneration of $30 CAD for my participation regardless of my performance or choice to withdraw.<br>
+		<br>
+		I am aware that any identifying information I provide will be kept confidential, and that any data presented, published, or shared will be anonymized.<br>
+		<br>
+		I agree to participate in this study [Measuring the utility of key-term highlighting for human-in-the-loop retrieval systems (approximately 120 minutes)].<br>
+		<br>
+		
+		<form method="POST" class="text-primary">
+		{% csrf_token %}
+		{{ form_consent.consent.0 }}, I agree to participate. <br>
+		{{ form_consent.consent.1 }}, I do not agree to participate. <br>
+		<br>
+		<input type="submit" value="Submit">
+		</form>
+		
+		</span>
+		
+    </div>	
+  </div>
+
+
+{% endblock %}
+

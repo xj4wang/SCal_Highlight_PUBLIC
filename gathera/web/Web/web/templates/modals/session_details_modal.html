@@ -1,0 +1,91 @@
+<div class="modal" id="sessionModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header pb-0">
+        <div class="modal-title text-primary d-flex flex-grow-1 ">
+          <div class="d-flex flex-column flex-grow-1 ">
+          <h5 class="text-primary">Session Details</h5>
+          <h6 class="text-secondary" id="sessionModalTitle"></h6>
+          <h6 class="text-muted small sessionModalDetails d-none">Created <span id="session_created_at"></span></h6>
+          </div>
+
+          <div class="d-flex align-items-center flex-grow-1 ">
+            <ul class="nav nav-pills nav-justified flex-column flex-md-row" id="sessionDetailsTabs" role="tablist">
+              <li class="nav-item align-self-center">
+                <a class="nav-link active" id="detailsTab" data-toggle="pill" href="#pills-details" role="tab">Details</a>
+              </li>
+              <li class="nav-item align-self-center" id="sharedWithTab">
+                <a class="nav-link" data-toggle="pill" href="#pills-shared-with" role="tab">Shared with</a>
+              </li>
+              <li class="nav-item align-self-center" id="actionsTab">
+                <form action="" method="POST">
+                  {% csrf_token %}
+                  <div id="sessionActionsTab">
+                  </div>
+                </form>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="sessionModalBody">
+        <div class="alert alert-danger d-none" id="sessionModalError"></div>
+
+        <div class="center-text mt-3" id="sessionModalSpinner">
+          <div class="spinner-border text-secondary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+
+        <div id="sessionModalDetails" class="sessionModalDetails d-none">
+          <div class="tab-content">
+            <div class="tab-pane show active" id="pills-details" role="tabpanel">
+              <p class="mb-1">
+                <h6 class="text-secondary">Description</h6>
+              <p id="session_description"></p>
+              </p>
+              <p class="mb-1">
+                <h6 class="text-secondary">Narrative</h6>
+              <p id="session_narrative"></p>
+              </p>
+              <p class="mb-1">
+                <h6 class="text-secondary d-inline">Seed query: </h6> <span id="session_seed_query"></span>
+              </p>
+              <p class="mb-1">
+                <h6 class="text-secondary d-inline">Strategy:</h6> <span id="session_strategy"></span>
+              </p>
+              <p class="mb-1">
+                <h6 class="text-secondary d-inline">Effort (max judgments):</h6> <span id="session_effort"></span>
+              </p>
+
+              <div class="row">
+                <div class="col-md-5 col-sm-5 mx-auto center-text">
+                  <canvas id="piechart" width="200" height="200" class="mt-2"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="pills-shared-with" role="tabpanel">
+              <form action="" method="POST">
+              {% csrf_token %}
+              <div id="sessionSharedWithList">
+                <!-- List of users will be displayed here using template from function templateSharedToUser -->
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

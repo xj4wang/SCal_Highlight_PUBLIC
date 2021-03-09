@@ -1,0 +1,116 @@
+{% if error %}
+<div class="row">
+    <div class="col-md-12">
+        <span class="text-danger">{{ error }}</span>
+    </div>
+</div>
+{% endif %}
+
+
+{% if isQueryPage %}
+  {% if not SERP.hits %}
+  <div class="med card-section">
+    <p style="padding-top:.33em">
+      Your search - <em>{{ query }}</em> - did not match any documents. </p>
+    <p style="margin-top:1em">Suggestions:</p>
+    <ul style="margin-left:1.3em;margin-bottom:2em">
+      <li>Make sure that all words are spelled correctly.</li>
+      <li>Try different keywords.</li>
+      <li>Try more general keywords.</li>
+      <li>Try fewer keywords.</li>
+    </ul>
+  </div>
+
+  {% else %}
+
+  <div class="row">
+    <div class="col-2 d-none d-sm-block">
+      <div class="card border-0">
+        {% if SERP.total_time %}<small class="gray-text mx-auto mb-2">Your query took {{ SERP.total_time|floatformat }} seconds</small>{% endif %}
+        <br/>
+        <small class="gray-text mx-auto mb-2">query id is {{ queryID }}</small>
+        <small class="gray-text mx-auto mb-2">serp id is {{ serpID }}</small>
+        <div class="card-header py-2 text-secondary">
+          Filter
+        </div>
+        <div class="card-body">
+          <span></span>
+        </div>
+        <div class="card-header py-2 text-secondary">
+          Labels
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-7">
+
+      {% for hit in SERP.hits %}
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <div class="document d-flex flex-grow-1 searchItemSelector col-sm-12 col-md-8"
+             id="doc_{{hit.docno}}_card"
+             data-rank="{{ hit.rank }}"
+             data-doc-id="{{ hit.docno }}"
+             data-title="{{ hit.title|escape }}"
+             data-snippet="{{ hit.snippet }}"
+             data-toggle="modal" data-target="#documentModal"
+             style="min-height: 5rem;cursor: pointer; cursor: hand; transition: border-color 0.3s ease-in"
+            >
+          <div class="align-self-center align-self-stretch p-2 SERP_indicator" id="doc_{{ hit.docno }}_SERP_indicator"  style="border-color: {% if hit.relevance_judgment == 2 %}#84c273{% elif hit.relevance_judgment == 1 %}#c6fab8{% elif hit.relevance_judgment == 0 %}#a5a5a5{% else %}hsla(50, 50%, 50%, 0.0){% endif %};"></div>
+          <div class="align-self-center py-0">
+            <h6 class="title" style="margin-bottom: 0;">{{ hit.title|escape }}</h6>
+            <div class="url small">doc_id: {{ hit.docno }}</div>
+            <div class="snippet"> {{ hit.snippet|safe }} </div>
+          </div>
+        </div>
+        <div class="mx-auto">
+          <div class="d-flex flex-row flex-md-column judging-criteria-btn-group SERP" role="group" data-doc-id="{{ hit.docno }}">
+            <a class="{% if hit.relevance_judgment == 2 %}active{% endif %} btn btn-sm center-text hoverOpacity btn-outline-secondary docViewDocHRelButton rounded-0" data-doc-id="{{ hit.docno }}" data-is-serp-judging="true">Highly {% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</a>
+            <a class="{% if hit.relevance_judgment == 1 %}active{% endif %} btn btn-sm center-text hoverOpacity btn-outline-secondary docViewDocRelButton rounded-0 mx-1 mx-md-0 my-0 my-md-1" data-doc-id="{{ hit.docno }}" data-is-serp-judging="true">{% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</a>
+            <a class="{% if hit.relevance_judgment == 0 %}active{% endif %} btn btn-sm center-text hoverOpacity btn-outline-secondary docViewDocNonRelButton rounded-0" data-doc-id="{{ hit.docno }}" data-is-serp-judging="true">Not {% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</a>
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+
+    <div class="col-3 d-none d-sm-block">
+      <div class="card border-0">
+        <div class="card-header py-2 text-primary">
+          Similar queries
+        </div>
+        <div class="card-body">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<nav class="my-5">
+  <ul class="pagination justify-content-center">
+      <li class="page-item {{ pagination.is_first_page|yesno:'disabled,' }}">
+      <a class="page-link" href="{% url 'search:main'%}?query={{query.split|join:'+'}}&page_number=1">First</a>
+    </li>
+    <li class="page-item {{ pagination.is_first_page|yesno:'disabled,' }}">
+      <a class="page-link" href="{% url 'search:main'%}?query={{query.split|join:'+'}}&page_number={{pagination.page_number|add:-1}}">Prev</a>
+    </li>
+    {% for i in pagination.page_range %}
+    <li class="page-item {% if pagination.page_number == i %} active {% endif %}">
+      <a class="page-link" href="{% url 'search:main'%}?query={{query.split|join:'+'}}&page_number={{i}}">
+        {{i}}
+        <span class="sr-only">(current)</span>
+      </a>
+    </li>
+    {% endfor %}
+    <li class="page-item {{ pagination.is_last_page|yesno:'disabled,' }}">
+        <a class="page-link" href="{% url 'search:main'%}?query={{query.split|join:'+'}}&page_number={{pagination.page_number|add:+1}}">Next</a>
+    </li>
+
+  </ul>
+</nav>
+
+
+  {% endif %}
+
+
+{% endif %}

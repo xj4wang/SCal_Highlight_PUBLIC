@@ -1,0 +1,69 @@
+{% extends 'core/home_base.html' %}
+{% block pagetitle %}Sessions{% endblock %}
+{% block home-nav-sessions-extra-class %}border-bottom{% endblock %}
+
+{% block home-main %}
+  <div class="row">
+    {% if sessions or shared_sessions %}
+    <div class="col-sm-12">
+      <div class="card border-0">
+        <div class="card-block">
+          <div class="d-flex flex-grow-1 mt-2">
+            <div class="d-flex flex-column flex-grow-1">
+              <h2 class="text-dark">Sessions</h2>
+            </div>
+
+            <div class="d-flex align-items-center flex-grow-1 ">
+              <ul class="nav nav-pills nav-justified flex-column flex-md-row" role="tablist">
+                <li class="nav-item align-self-center">
+                  <a class="nav-link active" data-toggle="pill" href="#pills-created-sessions" role="tab">Created sessions</a>
+                </li>
+                <li class="nav-item align-self-center">
+                  <a class="nav-link" data-toggle="pill" href="#pills-shared-sessions" role="tab">Shared sessions</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+          <div class="tab-content">
+            <div class="tab-pane show active" id="pills-created-sessions" role="tabpanel">
+              {% if sessions %}
+              {% include 'cards/sessions/list_sessions_table.html' %}
+              {% else %}
+                <p class="text-muted mt-4">You have no created sessions.</p>
+              {% endif %}
+            </div>
+            <div class="tab-pane" id="pills-shared-sessions" role="tabpanel">
+              {% if shared_sessions %}
+                {% include 'cards/sessions/shared_sessions_table.html' %}
+              {% else %}
+                <p class="text-muted mt-4">You have no shared sessions.</p>
+              {% endif %}
+            </div>
+          </div>
+
+        </div>
+        <!-- Share session modal is included in base /-->
+      </div>
+    </div>
+    {% endif %}
+
+    {% if not sessions and not shared_sessions %}
+    <div class="col-md-12">
+      <div class="card mt-4 border-0">
+        <div class="card-block">
+          {% include 'cards/sessions/no_session_create_card.html' %}
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  {% if sessions or shared_sessions %}
+  <!-- Session details modal is included in base /-->
+  <!-- Delete session modal -->
+  {% include 'modals/delete_session_modal.html' %}
+  {% endif %}
+
+{% endblock %}
+

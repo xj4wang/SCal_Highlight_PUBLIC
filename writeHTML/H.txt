@@ -1,0 +1,40 @@
+<li>
+<input type="checkbox" id="education1a" name="education" value="education1a">
+<label for="education1a">Anthropology</label>
+</li>
+<li>
+<input type="checkbox" id="education1b" name="education" value="education1b">
+<label for="education1b">Archaeology, History</label>
+</li>
+<li>
+<input type="checkbox" id="education1c" name="education" value="education1c">
+<label for="education1c">Linguistics and languages</label>
+</li>
+<li>
+<input type="checkbox" id="education1d" name="education" value="education1d">
+<label for="education1d">Philosophy</label>
+</li>
+<li>
+<input type="checkbox" id="education1e" name="education" value="education1e">
+<label for="education1e">Religion</label>
+</li>
+<li>
+<input type="checkbox" id="education1f" name="education" value="education1f">
+<label for="education1f">Culinary arts</label>
+</li>
+<li>
+<input type="checkbox" id="education1g" name="education" value="education1g">
+<label for="education1g">Literature</label>
+</li>
+<li>
+<input type="checkbox" id="education1h" name="education" value="education1h">
+<label for="education1h">Performing arts</label>
+</li>
+<li>
+<input type="checkbox" id="education1i" name="education" value="education1i">
+<label for="education1i">Visual arts</label>
+</li>
+<li>
+<input type="checkbox" id="education1j" name="education" value="education1j">
+<label for="education1j">Other (please specify)</label>
+</li>

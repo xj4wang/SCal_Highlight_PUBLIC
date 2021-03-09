@@ -1,0 +1,47 @@
+[
+  {
+    "model": "core.tasksetting",
+    "pk": 1,
+    "fields": {
+      "show_search": true,
+      "toggle_doc": true,
+      "only_show_doc": false
+    }
+  },
+  {
+    "model": "core.tasksetting",
+    "pk": 2,
+    "fields": {
+      "show_search": true,
+      "toggle_doc": false,
+      "only_show_doc": false
+    }
+  },
+  {
+    "model": "core.tasksetting",
+    "pk": 3,
+    "fields": {
+      "show_search": false,
+      "toggle_doc": false,
+      "only_show_doc": false
+    }
+  },
+  {
+    "model": "core.tasksetting",
+    "pk": 4,
+    "fields": {
+      "show_search": false,
+      "toggle_doc": true,
+      "only_show_doc": false
+    }
+  },
+  {
+    "model": "core.tasksetting",
+    "pk": 5,
+    "fields": {
+      "show_search": false,
+      "toggle_doc": false,
+      "only_show_doc": true
+    }
+  }
+]

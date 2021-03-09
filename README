@@ -1,0 +1,78 @@
+#############################
+# Corpus and How to Install #
+#############################
+
+# Checkout the repo
+git clone https://github.com/HiCAL/HiCAL.git
+cd HiCAL
+# Checkout the CORD-19 dataset
+git clone # <<INSERT HERE>>
+cd cord-19
+python process.py cord-19.tgz
+# Create the data directory which is mounted to the docker containers
+mkdir ../data
+cp cord-19.tgz cord-19_para.tgz ../data/
+cd ..
+
+# Build and access the shell from the cal container
+sudo docker-compose -f HiCAL.yml run cal bash
+root@container-id:/# cd src && make corpus_parser
+# Generate features
+root@container-id:/# ./corpus_parser  --in /data/cord-19.tgz --out /data/cord-19.bin --para-in /data/cord-19_para.tgz --para-out /data/cord-19_para.bin
+# Exit the shell with Ctrl+D
+
+# Extract the tgz files
+cd data
+tar xvzf cord-19.tgz
+mv cord-19_test docs
+tar xvzf cord-19_para.tgz
+mv cord-19_test para
+cd ..
+# Use the modified functions.py (keep as sample-dataset/functions to ensure right version)
+cp sample-dataset/functions.py HiCALWeb/hicalweb/interfaces/DocumentSnippetEngine/functions.py
+
+# We are all set! Lets fire up the containers
+sudo DOC_BIN=/data/cord-19.bin PARA_BIN=/data/cord-19_para.bin docker-compose -f HiCAL.yml up -d
+
+####################################
+# Setting up with different topics #
+####################################
+
+sudo docker-compose run web bash
+
+python manage.py shell_plus
+topics = Topic.objects.all()
+topics.delete()
+exit 
+
+python manage.py import_topics
+# CTRL-D to exit
+
+####################
+# Debugging Django #
+####################
+
+sudo docker-compose logs -f --tail=100 web
+
+################
+# Docker Stuff #
+################
+
+sudo docker container ls
+
+sudo docker stop $(sudo docker ps -a -q)
+sudo docker rm $(sudo docker ps -a -q)
+sudo docker volume rm $(sudo docker volume ls -q)
+
+# Restart up the containers
+sudo DOC_BIN=/data/cord-19.bin PARA_BIN=/data/cord-19_para.bin docker-compose up -d
+
+#####################################
+# Adding in a new form using django #
+#####################################
+
+# setting up database for saving
+sudo docker-compose run web bash
+python manage.py makemigrations
+python manage.py migrate
+

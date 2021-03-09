@@ -1,0 +1,18 @@
+<div class="card mt-3">
+  <div class="card-body p-3">
+
+    {% for criteria in additional_judging_criteria %}
+      <div class="additionalJudgingCriterion" data-criterion-name="{{criteria.stored_as}}">
+        <h6 class="text-secondary">{{criteria.name}}</h6>
+        {% for option in criteria.options %}
+        <div class="custom-control custom-radio text-secondary custom-control-inline">
+          <input type="radio" id="{{ criteria.stored_as }}_radio{{ forloop.counter }}" name="{{ criteria.stored_as }}_radio"  value="{{ option }}" class="custom-control-input">
+          <label class="custom-control-label" for="{{ criteria.stored_as }}_radio{{ forloop.counter }}" value="{{ option }}">{{ option }}</label>
+        </div>
+        {% endfor %}
+        {% if not forloop.last %}<hr>{% endif %}
+      </div>
+    {% endfor %}
+
+  </div>
+</div>

@@ -1,0 +1,28 @@
+{% if user.current_session %}
+<h2 class="text-dark mb-1">Current session</h2>
+<span class="text-muted">Information about your current session.</span>
+
+<div class="list-group mt-4">
+  <div class="list-group-item list-group-item-action btn session-details border-0 px-0"
+       data-toggle="modal" data-target="#sessionModal" href="#"
+       data-is-shared-session={% if not current_session_owner %}"true"{% else %}"false"{% endif %}
+       data-session-id={% if user.current_session.username != user %}"{{ activated_shared_session.uuid }}"{% else %}"{{ user.current_session.uuid }}"{% endif %}
+       data-session-title="{{ user.current_session.topic.title }}"
+  >
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{ user.current_session.topic.title }}</h5>
+        {% if user.current_session.topic.number %}<small>#{{ user.current_session.topic.number }}</small>{% endif %}
+      </div>
+      {% if user.current_session.topic.description %}<p class="mb-1">{{ user.current_session.topic.description }}</p>{% endif %}
+      <p class="mb-1"><small><strong>Seed query:</strong> {{ user.current_session.topic.seed_query }}</small></p>
+      <p class="mb-1"><small><strong>Strategy:</strong> {{ user.current_session.get_strategy_display }}</small></p>
+      {% if task.task_obj.max_number_of_judgments > 0 %}<p class="mb-1"><small><strong>Effort (max judgments):</strong> {{ user.current_session.max_number_of_judgments }}</small></p>{% endif %}
+      <span class="small text-muted">Created by {{ user.current_session.username }} on {{ user.current_session.created_at }}</span>
+  </div>
+</div>
+
+{% else %}
+<h2 class="text-danger">No active session</h2>
+<hr>
+<p>You currently don't have an active session.  Please activate or create a new session.</p>
+{% endif %}

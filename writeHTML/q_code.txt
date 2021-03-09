@@ -1,0 +1,640 @@
+var q1 = Object.create(question);
+q1.q = 'What sort of origin is COVID-19 suggested to have?';
+q1.a = 'Silicotic';
+q1.b = 'Zoonotic';
+q1.c = 'Zymotic';
+q1.d = 'Posthypnotic';
+q1.e = 'Siderotic';
+
+var q2 = Object.create(question);
+q2.q = 'A number of arguments suggest that COVID-19 has a zoonotic origin. What species is suspected of being the “missing link” in its transmission to humans?';
+q2.a = 'Rabbits';
+q2.b = 'Armadillos';
+q2.c = 'Pangolins';
+q2.d = 'Mosquitos';
+q2.e = 'Pigs';
+
+var q3 = Object.create(question);
+q3.q = 'How does the H5N1 virus, also known as the “avian influenza”, differ from COVID-19?';
+q3.a = 'Avian and mammals are different';
+q3.b = 'Humans were never affected';
+q3.c = 'Coughing is not a symptom';
+q3.d = 'All of the above';
+q3.e = 'Both a and b';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus origin';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Different weather and climate is most likely to affect the ________ of COVID-19.';
+q1.a = 'Symptoms';
+q1.b = 'Treatment';
+q1.c = 'Operation';
+q1.d = 'Transmission';
+q1.e = 'Placebo';
+
+var q2 = Object.create(question);
+q2.q = 'The transmissibility of COVID-19 seems to be strongly correlated with certain features of weather and climate. Especially with ________.';
+q2.a = 'Temperature';
+q2.b = 'Humidity';
+q2.c = 'Precipitation';
+q2.d = 'Wind speed';
+q2.e = 'Both a and b';
+
+var q3 = Object.create(question);
+q3.q = 'The 2 metre of social distance recommended by the Center for Disease Control and Prevention (CDC) may be insufficient in certain environmental conditions. Especially in ________.';
+q3.a = 'High precipitation';
+q3.b = 'High wind speed';
+q3.c = 'High temperature and high humidity';
+q3.d = 'High temperature and low humidity';
+q3.e = 'Low temperature and low humidity';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus response to weather changes';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Which of the following(s) is/are part of the seven coronaviruses associated with diseases in humans other than SARS-CoV-2, commonly known as COVID-19?';
+q1.a = 'NIRS-Cov';
+q1.b = 'HARS-Cov';
+q1.c = 'MERS-CoV';
+q1.d = 'URA-Cov';
+q1.e = 'GBA-Cov';
+
+var q2 = Object.create(question);
+q2.q = 'Receiving ________ from other coronavirus outbreaks is one possible explanation for some populations experiencing milder symptoms than others.';
+q2.a = 'ADE (adverse drug events)';
+q2.b = 'ADE (antibody dependent enhancement)';
+q2.c = 'ADE (absorption-desorption equilibrium)';
+q2.d = 'ADE (after death experiences)';
+q2.e = 'None of the above';
+
+var q3 = Object.create(question);
+q3.q = 'Antibody-dependent enhancement (ADE) is an atypical immunological paradox commonly associated with dengue virus re-infection. Which of the following have been hypothesized to be a result(s) of receiving ADE from other coronaviruses?';
+q3.a = 'Severe clinical manifestations of SARS-CoV-2';
+q3.b = 'Milder symptoms correlated to cross protection';
+q3.c = 'Guaranteed immunity to Covid-19';
+q3.d = 'Both a and b';
+q3.e = 'None of the above';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus immunity';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'COVID-19 patients with severe ________ is often found to have fatal outcomes.';
+q1.a = 'Acute Kidney Injury (AKI)';
+q1.b = 'Acute Schistismus (AS)';
+q1.c = 'Acute Glycacal Injury (AGI)';
+q1.d = 'Acute Oligectasia (AO)';
+q1.e = 'Acute Pachyad Injury (API)';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following features are correlated with higher mortality from Covid-19?';
+q2.a = 'Being male';
+q2.b = 'Older age';
+q2.c = 'Having comorbidities';
+q2.d = 'All of the above';
+q2.e = 'Both b and c';
+
+var q3 = Object.create(question);
+q3.q = 'Patients with cancer are more likely to ________';
+q3.a = 'be asymptomatic when infected with Covid-19';
+q3.b = 'die from Covid-19';
+q3.c = 'recover from Covid-19';
+q3.d = 'Both a and b';
+q3.e = 'Both b and c';
+
+var qs = Object.create(question_set);
+qs.t = 'how do people die from the coronavirus';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'A promising target for both biagnosis and therapeutics treatments of the new COVID-19 is the corona virus (CoV) spike (S) ________.';
+q1.a = 'Fibronectin';
+q1.b = 'Pikachurin';
+q1.c = 'Glycoprotein';
+q1.d = 'Rhodopsin';
+q1.e = 'Hemoglobin';
+
+var q2 = Object.create(question);
+q2.q = '________ in SARS-CoV-2 S protein have been found to bind strongly to human and bat ________ receptors.';
+q2.a = 'receptor binding domain (RBD), angiotensin-converting enzyme 2 (ACE2)';
+q2.b = 'receptor binding domain (RBD), molecular dynamics (MD)';
+q2.c = 'molecular dynamics (MD), angiotensin-converting enzyme 2 (ACE2)';
+q2.d = 'angiotensin-converting enzyme 2 (ACE2), receptor binding domain (RBD)';
+q2.e = 'None of the above';
+
+var q3 = Object.create(question);
+q3.q = 'SARS-CoV-2 and SARS-CoV are known to both recognize the same host cell receptor responsible for mediating infection. This means that SAR-CoV, the SARS pandemic that occurred in 2002, also ________.';
+q3.a = 'has loss of olfactory senses as a symptom';
+q3.b = 'has the same level of severity once infected';
+q3.c = 'binds to angiotensin-converting enzyme 2 (ACE2)';
+q3.d = 'All of the above';
+q3.e = 'Both b and c';
+
+var qs = Object.create(question_set);
+qs.t = 'animal models of COVID-19';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Which of the following is a type of rapid testing for COVID-19?';
+q1.a = 'Singlewave rapid detection tests';
+q1.b = 'Mayocarditis-linked rapid detection tests';
+q1.c = 'Antigen-based rapid detection tests';
+q1.d = 'Brachyium rapid detection tests';
+q1.e = 'Glycole-linked rapid detection tests';
+
+var q2 = Object.create(question);
+q2.q = 'Using samples of nasopharyngeal swabs allows us to perform which of the following tests?';
+q2.a = 'Molecular tests';
+q2.b = 'Antigen tests';
+q2.c = 'Antibody tests';
+q2.d = 'Both a and b';
+q2.e = 'Both b and c';
+
+var q3 = Object.create(question);
+q3.q = 'Which tests are helpful in identifying people who are capable of donating plasma to help patients currently fighting the infection.';
+q3.a = 'Molecular tests';
+q3.b = 'Antibody tests';
+q3.c = 'Antigen tests';
+q3.d = 'Both a and b';
+q3.e = 'Both b and c';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus test rapid testing';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Serological methods can be used to detect specific antibodies of ________ classes.';
+q1.a = 'HpA and HpC';
+q1.b = 'IgM and IgG';
+q1.c = 'TsG and TsB';
+q1.d = 'ArC and ArN';
+q1.e = 'CvK and CvG';
+
+var q2 = Object.create(question);
+q2.q = 'A positive serological test result indicates ________.';
+q2.a = 'Immunity to reinfection with the suspected pathogen';
+q2.b = 'Active infection with the suspected pathogen';
+q2.c = 'Recent exposure to the suspected pathogen';
+q2.d = 'Both a and c';
+q2.e = 'None of the above';
+
+var q3 = Object.create(question);
+q3.q = 'Why may serological tests have limited use as a diagnostic method for active COVID-19 infections?';
+q3.a = 'It detects antibodies';
+q3.b = 'Results can take up to a week';
+q3.c = 'It requires blood';
+q3.d = 'Both a and b';
+q3.e = 'None of the above';
+
+var qs = Object.create(question_set);
+qs.t = 'serological tests for coronavirus';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'A possible solution for sparsity of testing kits is to use ________.';
+q1.a = 'Molecular testing';
+q1.b = 'Predictive testing';
+q1.c = 'Genetic testing';
+q1.d = 'Protoid testing';
+q1.e = 'Group testing';
+
+var q2 = Object.create(question);
+q2.q = 'Antibody tests are ________ to the under reporting of COVID-19 case since ________.';
+q2.a = 'Helpful, it accounts for recovered patients';
+q2.b = 'Not helpful, it only accounts for recovered patients';
+q2.c = 'Helpful, it relies on blood samples';
+q2.d = 'Not helpful, it relies on blood samples';
+q2.e = 'Both b and d';
+
+var q3 = Object.create(question);
+q3.q = 'To retrospectively help catch under reported cases of COVID-19, we should collect samples of ________ to test.';
+q3.a = 'Blood';
+q3.b = 'Nasopharyngeal swab';
+q3.c = 'Oropharyngeal swab';
+q3.d = 'Both a and b';
+q3.e = 'Both b and c';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus under reporting';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Which of the following are journals reporting on COVID-19 in Canada?';
+q1.a = 'Canadian Health journal (CHJ)';
+q1.b = 'Canadian Health Care journal (CHCJ)';
+q1.c = 'Canadian Open journal (COJ)';
+q1.d = 'Canadian Medicine journal (CMJ)';
+q1.e = 'Canadian Medical Association journal (CMAJ)';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following are computational/mathematical models used to achieve?';
+q2.a = 'Projecting demand for critical care beds during COVID-19';
+q2.b = 'Estimation of CVOID-19-induced depletion of hospital resources';
+q2.c = 'Effects of physical-distancing interventions used to slow the spread of COVID-19';
+q2.d = 'All of the above';
+q2.e = 'Both a and b';
+
+var q3 = Object.create(question);
+q3.q = 'Which of the following are non-pharmaceutical interventions Canadians can apply to reduce the burden on the healthcare system during the COVID-19 pandemic?';
+q3.a = 'Vaccination';
+q3.b = 'Social distancing';
+q3.c = 'Remdesivir';
+q3.d = 'Opting for in person meetings';
+q3.e = 'Both b and d';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus in Canada';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Rigorous social distancing has led to dramatic declines in ________.';
+q1.a = 'Confidentiality';
+q1.b = 'Mobility';
+q1.c = 'Bioavailability';
+q1.d = 'Monospecific';
+q1.e = 'None of the above';
+
+var q2 = Object.create(question);
+q2.q = 'Social distancing commonly referred to as a ________ intervention on the transmission of COVID-19.';
+q2.a = 'Non-pharmaceutical';
+q2.b = 'Parasitological';
+q2.c = 'Non-countercyclical';
+q2.d = 'Transhistorical';
+q2.e = 'Non-Neuroanatomical';
+
+var q3 = Object.create(question);
+q3.q = 'Examples of social distancing includes ________.';
+q3.a = 'Wearing a mask';
+q3.b = 'Working from home';
+q3.c = 'Washing your hands';
+q3.d = 'All of the above';
+q3.e = 'Both a and b';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus social distancing impact';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Which of the following methods have been used for severity risk prediction and triage of COVID-19 patients?';
+q1.a = 'Lacrimitis testing';
+q1.b = 'Ectacal ranking';
+q1.c = 'Unation rapid testing';
+q1.d = 'Machine learning';
+q1.e = 'Ostacal ranking';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following features is/are the best predictor(s) of COVID-19?';
+q2.a = 'Cough';
+q2.b = 'Headache';
+q2.c = 'Fever';
+q2.d = 'Sore throat';
+q2.e = 'Myalgia';
+
+var q3 = Object.create(question);
+q3.q = 'Which of the following are likely procedures used in triage of COVID-19 patients?';
+q3.a = 'Checking for fever';
+q3.b = 'Collecting history of travel';
+q3.c = 'Collecting a blood sample';
+q3.d = 'All of the above';
+q3.e = 'Both a and b';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus hospital rationing';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Quarantine is used to control ________ exposure among people.';
+q1.a = 'consubstantial';
+q1.b = 'inquisitorial';
+q1.c = 'Social';
+q1.d = 'Salpingad';
+q1.e = 'Uncial';
+
+var q2 = Object.create(question);
+q2.q = 'Quarantine is commonly referred to as a ________ intervention on the transmission of COVID-19.';
+q2.a = 'Non-pharmaceutical';
+q2.b = 'Parasitological';
+q2.c = 'Non-countercyclical';
+q2.d = 'Transhistorical';
+q2.e = 'Non-Neuroanatomical';
+
+var q3 = Object.create(question);
+q3.q = 'Why is quarantining for 14 days alone not enough? (i.e. we still need to wear masks, maintain physical distancing, get tested, etc.)';
+q3.a = 'People can be asymptomatic';
+q3.b = 'Symptoms can develop after 14 days';
+q3.c = 'SEIR modeling of COVID-19 does not consider quarantine';
+q3.d = 'All of the above';
+q3.e = 'Both a and b';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus quarantine';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Which of the following(s) is/are potential transmission routes?';
+q1.a = 'Facies-nasal transmission';
+q1.b = 'Pyrostaxis transmission';
+q1.c = 'Morphic-prosoposis transmission';
+q1.d = 'Faecal-oral transmission';
+q1.e = 'Dynamectomy transmission';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following are confirmed methods of transmission of COVID-19?';
+q2.a = 'Direct contact transmission';
+q2.b = 'Airborne water droplets (aerosol) transmission';
+q2.c = 'Faecal-oral (including waterborne) transmission';
+q2.d = 'Both a and b';
+q2.e = 'Both b and c';
+
+var q3 = Object.create(question);
+q3.q = 'Patients can have positive faecal tests even after having negative nasopharyngeal swabs. This means that ________.';
+q3.a = 'all patients can expect to have gastrointestinal symptoms in early stages of their infection';
+q3.b = 'currently, there are more confirmed cases of waterborne transmission than aerosol transmission';
+q3.c = 'wastewater surveillance of SARS-CoV-2 can be an effective tool in early detection of outbreak and determination of COVID-19 prevalence within a population';
+q3.d = 'All of the above';
+q3.e = 'Both a and c';
+
+var qs = Object.create(question_set);
+qs.t = 'how does coronavirus spread?';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Reconstruction of infection events, including that of super-spreading events, falls into the study of ________.';
+q1.a = 'epidemiology';
+q1.b = 'semeiology';
+q1.c = 'soteriology';
+q1.d = 'apiology';
+q1.e = 'trachology';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following are most commonly used to infer the presence or absence of super-spreading events during the early phases of these outbreaks?';
+q2.a = 'Reproductive number R(0)';
+q2.b = 'Dispersion factor (k)';
+q2.c = 'Probability of death (P)';
+q2.d = 'Both a and b';
+q2.e = 'Both b and c';
+
+var q3 = Object.create(question);
+q3.q = 'If MERS had an estimated k of 0.2 and SARS-CoV-2 has an estimated k of 0.08, we can deduce that super spreaders ________.';
+q3.a = 'are more prominent in SARS-CoV-2 than MERS';
+q3.b = 'are more prominent in MERS than SARS-CoV-2';
+q3.c = 'played a key role in the early stages of both events';
+q3.d = 'Both a and c';
+q3.e = 'Both b and c';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus super spreaders';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Common place(s) for Covid-19 virus survival outside of the body is/are in ________.';
+q1.a = 'saliva droplets';
+q1.b = 'hair shedding';
+q1.c = 'skin shedding';
+q1.d = 'Both a and b';
+q1.e = 'Both a and c';
+
+var q2 = Object.create(question);
+q2.q = 'What are some environmental factors which affect how long SARS-CoV-2 can survive on common touch surfaces outside the body?';
+q2.a = 'Temperature';
+q2.b = 'Humidity';
+q2.c = 'Surface texture';
+q2.d = 'All of the above';
+q2.e = 'Both a and b';
+
+var q3 = Object.create(question);
+q3.q = 'Reason(s) why SARS-CoV-2 and other animal CoVs have remarkably short persistence on copper and latex surfaces compared to stainless steel, plastic, and glass is/are due to their difference in ________.';
+q3.a = 'thermal conductivity';
+q3.b = 'density';
+q3.c = 'porosity';
+q3.d = 'All of the above';
+q3.e = 'Both a and c';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus outside body';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Common place(s) for Covid-19 virus survival outside of the body is/are in ________.';
+q1.a = 'saliva droplets';
+q1.b = 'hair shedding';
+q1.c = 'skin shedding';
+q1.d = 'Both a and b';
+q1.e = 'Both a and c';
+
+var q2 = Object.create(question);
+q2.q = 'What are some environmental factors which affect how long SARS-CoV-2 can survive on common touch surfaces outside the body?';
+q2.a = 'Temperature';
+q2.b = 'Humidity';
+q2.c = 'Surface texture';
+q2.d = 'All of the above';
+q2.e = 'Both a and b';
+
+var q3 = Object.create(question);
+q3.q = 'Reason(s) why SARS-CoV-2 and other animal CoVs have remarkably short persistence on copper and latex surfaces compared to stainless steel, plastic, and glass is/are due to their difference in ________.';
+q3.a = 'porosity';
+q3.b = 'thermal conductivity';
+q3.c = 'density';
+q3.d = 'All of the above';
+q3.e = 'Both a and b';
+
+var qs = Object.create(question_set);
+qs.t = 'how long does coronavirus survive on surfaces';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'A common site(s) used for clinical trial registration is ________.';
+q1.a = 'covidtrials.gov';
+q1.b = 'clinicaltrials.gov';
+q1.c = 'cdc.gov/clinical-trials';
+q1.d = 'biomedcentral.com/clinical-trials';
+q1.e = 'medicaltrials.com';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following are drug repurposing clinical trials?';
+q2.a = 'Hydroxychloroquine';
+q2.b = 'Radiotherapy';
+q2.c = 'Remdesivir';
+q2.d = 'Plasma';
+q2.e = 'Both a and c';
+
+var q3 = Object.create(question);
+q3.q = 'Which of the following are reasons which makes Chloroquine a good candidate for drug repurposing clinical trials against COVID-19.';
+q3.a = 'Like hydroxychloroquine, chloroquine also affect endosomal function';
+q3.b = 'Unlike hydroxychloroquine, chloroquine does not block autophagosome-lysosome fusion';
+q3.c = 'Unlike hydroxychloroquine, chloroquine is a broad-spectrum antibiotic';
+q3.d = 'Both a and b';
+q3.e = 'None of the above';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus clinical trials';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Which of the following is a possible risk of prolonged mask wearing?';
+q1.a = 'Ciliphilia';
+q1.b = 'Cytopexy';
+q1.c = 'Orostenosis';
+q1.d = 'Skin damage';
+q1.e = 'Carbon dioxide poisoning';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following are helpful in slowing the spread of COVID-19 in normal everyday settings?';
+q2.a = 'Surgical grade N95 masks';
+q2.b = 'Surgical masks other than N95 masks';
+q2.c = 'Cloth masks';
+q2.d = 'All of the above';
+q2.e = 'Both a and b';
+
+var q3 = Object.create(question);
+q3.q = 'Are surgical grade N95 masks capable of completely filtering all SARS-CoV-2 virions?';
+q3.a = 'Yes, its filtration efficiency for sub-300nm particles is 100%';
+q3.b = 'Yes, virions smaller than 300nm particles are not infectious for humans';
+q3.c = 'Yes, if worn properly';
+q3.d = 'No, its filtration efficiency for sub-300nm particles is not 100%';
+q3.e = 'No, since SARS-CoV-2 virions are oil-based';
+
+var qs = Object.create(question_set);
+qs.t = 'masks prevent coronavirus';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Which of the following are ingredients frequently used in alcohol hand sanitizers?';
+q1.a = 'Methanol';
+q1.b = 'Hydrogen monoxide';
+q1.c = 'Sodium oxide';
+q1.d = 'Propanol';
+q1.e = 'Ethanol';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following is the recommended alcohol concentration in alcohol hand sanitizers to be effective against COVID-19?';
+q2.a = '30% or more';
+q2.b = '40% or more';
+q2.c = '50% or more';
+q2.d = '60% or more';
+q2.e = 'None of the above';
+
+var q3 = Object.create(question);
+q3.q = 'Hand sanitizer ________ many microbes, making it ________ effective than washing your hands with soap and water at reducing the transmission of COVID-19.';
+q3.a = 'eliminates, more';
+q3.b = 'removes, less';
+q3.c = 'removes, more';
+q3.d = 'inactivates, less';
+q3.e = 'inactivates, more';
+
+var qs = Object.create(question_set);
+qs.t = 'what alcohol sanitizer kills coronavirus';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+
+var q1 = Object.create(question);
+q1.q = 'Which of the following is angiotensin converting enzyme 2 (ACE2) a regulator of?';
+q1.a = 'Renin-angiotensin system';
+q1.b = 'Pyad-papilliarty system';
+q1.c = 'Corics-oligoid system';
+q1.d = 'Enteresophageal system';
+q1.e = 'Myringiatry-variceal system';
+
+var q2 = Object.create(question);
+q2.q = 'Which of the following are treated using angiotensin-converting enzyme inhibitors?';
+q2.a = 'Hypertension';
+q2.b = 'Diabetes';
+q2.c = 'SARS-CoV-2';
+q2.d = 'Both a and b';
+q2.e = 'Both a and c';
+
+var q3 = Object.create(question);
+q3.q = 'Why are patients taking Angiotensin-converting enzyme inhibitors (ACE) potentially at an increased risk for COVID-19?';
+q3.a = 'ACE2 enzyme is the SARS-CoV-2 receptor';
+q3.b = 'It increases oxygen demand from the heart';
+q3.c = 'It increases the production of angiotensin II';
+q3.d = 'Both a and b';
+q3.e = 'Both a and c';
+
+var qs = Object.create(question_set);
+qs.t = 'coronavirus and ACE inhibitors';
+qs.q1 = q1;
+qs.q2 = q2;
+qs.q3 = q3;
+list_of_questions.push(qs);
+
+

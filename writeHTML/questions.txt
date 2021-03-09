@@ -1,0 +1,497 @@
+coronavirus origin
+
+What sort of origin is COVID-19 suggested to have?
+Silicotic
+Zoonotic
+Zymotic
+Posthypnotic
+Siderotic
+
+A number of arguments suggest that COVID-19 has a zoonotic origin. What species is suspected of being the “missing link” in its transmission to humans?
+Rabbits
+Armadillos
+Pangolins
+Mosquitos
+Pigs
+
+How does the H5N1 virus, also known as the “avian influenza”, differ from COVID-19?
+Avian and mammals are different
+Humans were never affected
+Coughing is not a symptom
+All of the above
+Both a and b
+
+
+
+coronavirus response to weather changes
+
+Different weather and climate is most likely to affect the ________ of COVID-19.
+Symptoms
+Treatment
+Operation
+Transmission
+Placebo
+
+The transmissibility of COVID-19 seems to be strongly correlated with certain features of weather and climate. Especially with ________.
+Temperature
+Humidity
+Precipitation
+Wind speed
+Both a and b
+
+The 2 metre of social distance recommended by the Center for Disease Control and Prevention (CDC) may be insufficient in certain environmental conditions. Especially in ________.
+High precipitation
+High wind speed
+High temperature and high humidity
+High temperature and low humidity
+Low temperature and low humidity
+
+
+
+coronavirus immunity
+
+Which of the following(s) is/are part of the seven coronaviruses associated with diseases in humans other than SARS-CoV-2, commonly known as COVID-19?
+NIRS-Cov
+HARS-Cov
+MERS-CoV
+URA-Cov
+GBA-Cov
+
+Receiving ________ from other coronavirus outbreaks is one possible explanation for some populations experiencing milder symptoms than others.
+ADE (adverse drug events)
+ADE (antibody dependent enhancement)
+ADE (absorption-desorption equilibrium)
+ADE (after death experiences)
+None of the above
+
+Antibody-dependent enhancement (ADE) is an atypical immunological paradox commonly associated with dengue virus re-infection. Which of the following have been hypothesized to be a result(s) of receiving ADE from other coronaviruses?
+Severe clinical manifestations of SARS-CoV-2
+Milder symptoms correlated to cross protection
+Guaranteed immunity to Covid-19
+Both a and b
+None of the above
+
+
+
+how do people die from the coronavirus
+
+COVID-19 patients with severe ________ is often found to have fatal outcomes.
+Acute Kidney Injury (AKI)
+Acute Schistismus (AS)
+Acute Glycacal Injury (AGI)
+Acute Oligectasia (AO)
+Acute Pachyad Injury (API)
+
+Which of the following features are correlated with higher mortality from Covid-19?
+Being male
+Older age
+Having comorbidities
+All of the above
+Both b and c
+
+Patients with cancer are more likely to ________
+be asymptomatic when infected with Covid-19
+die from Covid-19
+recover from Covid-19
+Both a and b
+Both b and c
+
+
+
+animal models of COVID-19
+
+A promising target for both biagnosis and therapeutics treatments of the new COVID-19 is the corona virus (CoV) spike (S) ________.
+Fibronectin
+Pikachurin
+Glycoprotein
+Rhodopsin
+Hemoglobin
+
+________ in SARS-CoV-2 S protein have been found to bind strongly to human and bat ________ receptors.
+receptor binding domain (RBD), angiotensin-converting enzyme 2 (ACE2)
+receptor binding domain (RBD), molecular dynamics (MD)
+molecular dynamics (MD), angiotensin-converting enzyme 2 (ACE2)
+angiotensin-converting enzyme 2 (ACE2), receptor binding domain (RBD)
+None of the above
+
+SARS-CoV-2 and SARS-CoV are known to both recognize the same host cell receptor responsible for mediating infection. This means that SAR-CoV, the SARS pandemic that occurred in 2002, also ________.
+has loss of olfactory senses as a symptom
+has the same level of severity once infected
+binds to angiotensin-converting enzyme 2 (ACE2) 
+All of the above
+Both b and c
+
+
+
+coronavirus test rapid testing
+
+Which of the following is a type of rapid testing for COVID-19?
+Singlewave rapid detection tests
+Mayocarditis-linked rapid detection tests
+Antigen-based rapid detection tests
+Brachyium rapid detection tests
+Glycole-linked rapid detection tests
+
+Using samples of nasopharyngeal swabs allows us to perform which of the following tests?
+Molecular tests
+Antigen tests
+Antibody tests
+Both a and b
+Both b and c
+
+Which tests are helpful in identifying people who are capable of donating plasma to help patients currently fighting the infection.
+Molecular tests
+Antibody tests
+Antigen tests
+Both a and b
+Both b and c
+
+
+
+serological tests for coronavirus
+
+Serological methods can be used to detect specific antibodies of ________ classes.
+HpA and HpC
+IgM and IgG
+TsG and TsB
+ArC and ArN
+CvK and CvG
+
+A positive serological test result indicates ________.
+Immunity to reinfection with the suspected pathogen
+Active infection with the suspected pathogen
+Recent exposure to the suspected pathogen
+Both a and c
+None of the above
+
+Why may serological tests have limited use as a diagnostic method for active COVID-19 infections?
+It detects antibodies
+Results can take up to a week
+It requires blood
+Both a and b
+None of the above
+
+
+
+coronavirus under reporting
+
+A possible solution for sparsity of testing kits is to use ________.
+Molecular testing
+Predictive testing
+Genetic testing
+Protoid testing
+Group testing
+
+Antibody tests are ________ to the under reporting of COVID-19 case since ________.
+Helpful, it accounts for recovered patients
+Not helpful, it only accounts for recovered patients
+Helpful, it relies on blood samples
+Not helpful, it relies on blood samples
+Both b and d
+
+To retrospectively help catch under reported cases of COVID-19, we should collect samples of ________ to test.
+Blood
+Nasopharyngeal swab
+Oropharyngeal swab
+Both a and b
+Both b and c
+
+
+
+coronavirus in Canada
+
+Which of the following are journals reporting on COVID-19 in Canada?
+Canadian Health journal (CHJ)
+Canadian Health Care journal (CHCJ)
+Canadian Open journal (COJ)
+Canadian Medicine journal (CMJ)
+Canadian Medical Association journal (CMAJ)
+
+Which of the following are computational/mathematical models used to achieve?
+Projecting demand for critical care beds during COVID-19
+Estimation of CVOID-19-induced depletion of hospital resources
+Effects of physical-distancing interventions used to slow the spread of COVID-19
+All of the above
+Both a and b
+
+Which of the following are non-pharmaceutical interventions Canadians can apply to reduce the burden on the healthcare system during the COVID-19 pandemic?
+Vaccination
+Social distancing
+Remdesivir
+Opting for in person meetings
+Both b and d
+
+
+
+coronavirus social distancing impact
+
+Rigorous social distancing has led to dramatic declines in ________.
+Confidentiality
+Mobility
+Bioavailability
+Monospecific
+None of the above
+
+Social distancing commonly referred to as a ________ intervention on the transmission of COVID-19.
+Non-pharmaceutical
+Parasitological
+Non-countercyclical
+Transhistorical
+Non-Neuroanatomical
+
+Examples of social distancing includes ________.
+Wearing a mask
+Working from home
+Washing your hands
+All of the above
+Both a and b
+
+
+
+coronavirus hospital rationing
+
+Which of the following methods have been used for severity risk prediction and triage of COVID-19 patients?
+Lacrimitis testing
+Ectacal ranking
+Unation rapid testing
+Machine learning
+Ostacal ranking
+
+Which of the following features is/are the best predictor(s) of COVID-19?
+Cough
+Headache
+Fever
+Sore throat
+Myalgia
+
+Which of the following are likely procedures used in triage of COVID-19 patients?
+Checking for fever
+Collecting history of travel
+Collecting a blood sample
+All of the above
+Both a and b
+
+
+
+coronavirus quarantine
+
+Quarantine is used to control ________ exposure among people.
+consubstantial
+inquisitorial
+Social
+Salpingad
+Uncial
+
+Quarantine is commonly referred to as a ________ intervention on the transmission of COVID-19.
+Non-pharmaceutical
+Parasitological
+Non-countercyclical
+Transhistorical
+Non-Neuroanatomical
+
+Why is quarantining for 14 days alone not enough? (i.e. we still need to wear masks, maintain physical distancing, get tested, etc.)
+People can be asymptomatic
+Symptoms can develop after 14 days
+SEIR modeling of COVID-19 does not consider quarantine
+All of the above
+Both a and b
+
+
+
+how does coronavirus spread
+
+Which of the following(s) is/are potential transmission routes?
+Facies-nasal transmission
+Pyrostaxis transmission
+Morphic-prosoposis transmission
+Faecal-oral transmission
+Dynamectomy transmission
+
+Which of the following are confirmed methods of transmission of COVID-19?
+Direct contact transmission
+Airborne water droplets (aerosol) transmission
+Faecal-oral (including waterborne) transmission
+Both a and b
+Both b and c
+
+Patients can have positive faecal tests even after having negative nasopharyngeal swabs. This means that ________.
+all patients can expect to have gastrointestinal symptoms in early stages of their infection
+currently, there are more confirmed cases of waterborne transmission than aerosol transmission
+wastewater surveillance of SARS-CoV-2 can be an effective tool in early detection of outbreak and determination of COVID-19 prevalence within a population
+All of the above
+Both a and c
+
+
+
+coronavirus super spreaders
+
+Reconstruction of infection events, including that of super-spreading events, falls into the study of ________.
+epidemiology
+semeiology
+soteriology
+apiology
+trachology
+
+Which of the following are most commonly used to infer the presence or absence of super-spreading events during the early phases of these outbreaks?
+Reproductive number R(0)
+Dispersion factor (k)
+Probability of death (P)
+Both a and b
+Both b and c
+
+If MERS had an estimated k of 0.2 and SARS-CoV-2 has an estimated k of 0.08, we can deduce that super spreaders ________.
+are more prominent in SARS-CoV-2 than MERS
+are more prominent in MERS than SARS-CoV-2
+played a key role in the early stages of both events
+Both a and c
+Both b and c
+
+
+
+coronavirus outside body
+
+Common place(s) for Covid-19 virus survival outside of the body is/are in ________.
+saliva droplets
+hair shedding
+skin shedding
+Both a and b
+Both a and c
+
+What are some environmental factors which affect how long SARS-CoV-2 can survive on common touch surfaces outside the body?
+Temperature
+Humidity
+Surface texture
+All of the above
+Both a and b
+
+Reason(s) why SARS-CoV-2 and other animal CoVs have remarkably short persistence on copper and latex surfaces compared to stainless steel, plastic, and glass is/are due to their difference in ________.
+thermal conductivity
+density 
+porosity
+All of the above
+Both a and c
+
+
+
+how long does coronavirus survive on surfaces
+
+Common place(s) for Covid-19 virus survival outside of the body is/are in ________.
+saliva droplets
+hair shedding
+skin shedding
+Both a and b
+Both a and c
+
+What are some environmental factors which affect how long SARS-CoV-2 can survive on common touch surfaces outside the body?
+Temperature
+Humidity
+Surface texture
+All of the above
+Both a and b
+
+Reason(s) why SARS-CoV-2 and other animal CoVs have remarkably short persistence on copper and latex surfaces compared to stainless steel, plastic, and glass is/are due to their difference in ________.
+porosity
+thermal conductivity
+density 
+All of the above
+Both a and b
+
+
+
+coronavirus clinical trials
+
+A common site(s) used for clinical trial registration is ________.
+covidtrials.gov
+clinicaltrials.gov
+cdc.gov/clinical-trials
+biomedcentral.com/clinical-trials
+medicaltrials.com
+
+Which of the following are drug repurposing clinical trials?
+Hydroxychloroquine
+Radiotherapy
+Remdesivir
+Plasma
+Both a and c
+
+Which of the following are reasons which makes Chloroquine a good candidate for drug repurposing clinical trials against COVID-19.
+Like hydroxychloroquine, chloroquine also affect endosomal function
+Unlike hydroxychloroquine, chloroquine does not block autophagosome-lysosome fusion
+Unlike hydroxychloroquine, chloroquine is a broad-spectrum antibiotic
+Both a and b
+None of the above
+
+
+
+masks prevent coronavirus
+
+Which of the following is a possible risk of prolonged mask wearing?
+Ciliphilia
+Cytopexy
+Orostenosis
+Skin damage
+Carbon dioxide poisoning
+
+Which of the following are helpful in slowing the spread of COVID-19 in normal everyday settings?
+Surgical grade N95 masks
+Surgical masks other than N95 masks
+Cloth masks
+All of the above
+Both a and b
+
+Are surgical grade N95 masks capable of completely filtering all SARS-CoV-2 virions?
+Yes, its filtration efficiency for sub-300nm particles is 100%
+Yes, virions smaller than 300nm particles are not infectious for humans
+Yes, if worn properly
+No, its filtration efficiency for sub-300nm particles is not 100%
+No, since SARS-CoV-2 virions are oil-based
+
+
+
+what alcohol sanitizer kills coronavirus
+
+Which of the following are ingredients frequently used in alcohol hand sanitizers?
+Methanol
+Hydrogen monoxide
+Sodium oxide
+Propanol
+Ethanol
+
+Which of the following is the recommended alcohol concentration in alcohol hand sanitizers to be effective against COVID-19?
+30% or more
+40% or more
+50% or more
+60% or more
+None of the above
+
+Hand sanitizer ________ many microbes, making it ________ effective than washing your hands with soap and water at reducing the transmission of COVID-19.
+eliminates, more
+removes, less
+removes, more
+inactivates, less
+inactivates, more
+
+
+
+coronavirus and ACE inhibitors
+
+Which of the following is angiotensin converting enzyme 2 (ACE2) a regulator of?
+Renin-angiotensin system
+Pyad-papilliarty system
+Corics-oligoid system
+Enteresophageal system
+Myringiatry-variceal system
+
+Which of the following are treated using angiotensin-converting enzyme inhibitors?
+Hypertension
+Diabetes
+SARS-CoV-2
+Both a and b
+Both a and c
+
+Why are patients taking Angiotensin-converting enzyme inhibitors (ACE) potentially at an increased risk for COVID-19?
+ACE2 enzyme is the SARS-CoV-2 receptor
+It increases oxygen demand from the heart
+It increases the production of angiotensin II
+Both a and b
+Both a and c

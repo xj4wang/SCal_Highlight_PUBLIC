@@ -1,0 +1,18 @@
+# Pro-tip: Try not to put anything here. Avoid dependencies in
+#	production that aren't in development.
+-r base.txt
+
+
+
+# WSGI Handler
+# ------------------------------------------------
+
+# Static and Media Storage
+# ------------------------------------------------
+
+# Email backends for SendGrid and more
+# -------------------------------------------------------
+django-anymail[sendgrid]==7.1.0  # https://github.com/anymail/django-anymail
+
+
+

@@ -1,0 +1,156 @@
+{% extends 'core/home_base.html' %}
+{% load crispy_forms_tags %}
+{% block pagetitle %}Demographics Survey{% endblock %}
+{% block home-nav-demographics-survey-extra-class %}border-bottom{% endblock %}
+
+{% block home-main %}
+  <div class="row top-bottom-margin">
+  
+    <div class="col-sm-12">
+		<h2 class="text-dark mb-1">Demographics Survey</h2>
+		<span class="text-muted">
+		Please take your time to carefully read over the and fill out the Demographics Survery before starting the experiement.<br>
+		<br>
+		</span>
+	</div>
+	
+	<div class="col-md-9">
+	
+		<form method="POST">
+		
+		{% csrf_token %} 
+		<!-- {{ form_demographics }} -->
+		
+		<h6 class="mt-4">What category below includes your age?</h6>
+		<span class="text-muted">
+		{{ form_demographics.age.0 }} <br>
+		{{ form_demographics.age.1 }} <br>
+		{{ form_demographics.age.2 }} <br>
+		{{ form_demographics.age.3 }} <br>
+		{{ form_demographics.age.4 }} <br>
+		{{ form_demographics.age.5 }} <br>
+		{{ form_demographics.age.6 }} {{ form_demographics.age_other }} <br>
+		{{ form_demographics.age.7 }} <br>
+		</span>
+		
+		<h6 class="mt-4">What is your gender?</h6>
+		<span class="text-muted">
+		{{ form_demographics.gender.0 }} <br>
+		{{ form_demographics.gender.1 }} <br>
+		{{ form_demographics.gender.2 }} {{ form_demographics.gender_other }} <br>
+		{{ form_demographics.gender.3 }} <br>
+		</span>
+		
+		<h6 class="mt-4">What is the highest level of school you have completed or the highest degree you have received?</h6>
+		<span class="text-muted">
+		{{ form_demographics.education.0 }} <br>
+		{{ form_demographics.education.1 }} <br>
+		{{ form_demographics.education.2 }} <br>
+		{{ form_demographics.education.3 }} <br>
+		{{ form_demographics.education.4 }} <br>
+		{{ form_demographics.education.5 }} <br>
+		{{ form_demographics.education.6 }} <br>
+		{{ form_demographics.education.7 }} <br>
+		{{ form_demographics.education.8 }} {{ form_demographics.education_other }} <br>
+		{{ form_demographics.education.9 }} <br>
+		</span>
+		
+		<h6 class="mt-4">What is/are your academic field(s) of study in which you have obtained a degree? Select all that apply.</h6>
+		<span class="text-muted">
+		
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo-h">Humanities &#9662</button>
+		<div id="demo-h" class="collapse">	
+		<ul style="list-style-type:none;"><li>
+		{{ form_demographics.study.0 }} <br>
+		{{ form_demographics.study.1 }} <br>
+		{{ form_demographics.study.2 }} <br>
+		{{ form_demographics.study.3 }} <br>
+		{{ form_demographics.study.4 }} <br>
+		{{ form_demographics.study.5 }} <br>
+		{{ form_demographics.study.6 }} <br>
+		{{ form_demographics.study.7 }} <br>
+		{{ form_demographics.study.8 }} <br>
+		{{ form_demographics.study.9 }} <br>
+		</li></ul>
+		</div>
+		
+		<br>
+		
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo-ss">Social Sciences&#9662</button>
+		<div id="demo-ss" class="collapse">
+		<ul style="list-style-type:none;"><li>
+		{{ form_demographics.study.10 }} <br>
+		{{ form_demographics.study.11 }} <br>
+		{{ form_demographics.study.12 }} <br>
+		{{ form_demographics.study.13 }} <br>
+		{{ form_demographics.study.14 }} <br>
+		{{ form_demographics.study.15 }} <br>
+		{{ form_demographics.study.16 }} <br>
+		{{ form_demographics.study.17 }} <br>
+		{{ form_demographics.study.18 }} <br>
+		{{ form_demographics.study.19 }} <br>
+		</li></ul>
+		</div>
+		
+		<br>
+		
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo-ns">Natural Sciences &#9662</button>
+		<div id="demo-ns" class="collapse">
+		<ul style="list-style-type:none;"><li>
+		{{ form_demographics.study.20 }} <br>
+		{{ form_demographics.study.21 }} <br>
+		{{ form_demographics.study.22 }} <br>
+		{{ form_demographics.study.23 }} <br>
+		{{ form_demographics.study.24 }} <br>
+		</li></ul>
+		</div>
+		
+		<br>
+		
+		<button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo-fs">Formal Sciences&#9662</button>
+		<div id="demo-fs" class="collapse">		
+		<ul style="list-style-type:none;"><li>
+		{{ form_demographics.study.25 }} <br>
+		{{ form_demographics.study.26 }} <br>
+		{{ form_demographics.study.27 }} <br>
+		{{ form_demographics.study.28 }} <br>
+		{{ form_demographics.study.29 }} <br>
+		{{ form_demographics.study.30 }} <br>
+		{{ form_demographics.study.31 }} <br>
+		</li></ul>
+		</div>
+		
+		<br>
+		{{ form_demographics.study.32 }} {{ form_demographics.study_other }} <br>
+		{{ form_demographics.study.33 }} <br>
+		
+		</span>
+		
+		<br>
+		<input type="submit" value="Submit">
+		
+		</form>
+		
+		</span>
+
+    </div>	
+  </div>
+
+<style>
+.btn {
+  background-color: transparent;
+  background-repeat:no-repeat;
+  border: none;
+  color: grey;
+  text-align: center;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: darkorange;
+}
+.btn:focus {
+  background-color: darkorange;
+}
+</style>
+
+{% endblock %}

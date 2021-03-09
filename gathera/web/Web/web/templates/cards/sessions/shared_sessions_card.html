@@ -1,0 +1,37 @@
+<div class="mt-4">
+  {% for shared_session_item in shared_sessions %}
+  <div class="row mb-4 list-group flex-row">
+    <div class="col-md-9 list-group-item list-group-item-action btn session-details"
+         data-toggle="modal" data-target="#sessionModal"
+         data-is-shared-session="true"
+         data-session-id="{{ shared_session_item.shared_session_obj.uuid }}"
+         data-session-title="{{ shared_session_item.shared_session_obj.refers_to.topic.title }}">
+      <h5 class="text-truncate">{{ shared_session_item.shared_session_obj.refers_to.topic.title }}</h5>
+      <p class="mb-1 small text-truncate">
+        {% if shared_session_item.shared_session_obj.refers_to.topic.description %}
+          {{ shared_session_item.shared_session_obj.refers_to.topic.description }}
+        {% else %}
+          Topic description is unavailable.
+        {% endif %}
+      </p>
+      <p class="text-muted m-0" style="font-size: 65%;">
+        Created by {{ shared_session_item.shared_session_obj.refers_to.username }} on {{ shared_session_item.shared_session_obj.refers_to.created_at }}</p>
+    </div>
+    <div class="col-md-3 mt-3 mt-md-0 align-self-center center-text">
+      <form action="" method="POST">
+        <input type="hidden" name="is_shared_session" value="true">
+
+        {% csrf_token %}
+          <button type="submit"
+                  data-session-id="{{ shared_session_item.shared_session_obj.uuid }}"
+                  data-session-title="{{ shared_session_item.shared_session_obj.refers_to.topic.title }}"
+                  data-is-shared-session="true"
+                  name="activate_sessionid"
+                  value="{{ shared_session_item.shared_session_obj.uuid }}"
+                  class="btn btn-sm btn-block btn-outline-secondary" {% if user.current_session == shared_session_item.shared_session_obj.refers_to %}disabled{% endif %}>Activate
+          </button>
+      </form>
+    </div>
+  </div>
+{% endfor %}
+</div>

@@ -1,0 +1,24 @@
+<li>
+<input type="checkbox" id="education3a" name="education" value="education3a">
+<label for="education3a">Biology</label>
+</li>
+<li>
+<input type="checkbox" id="education3b" name="education" value="education3b">
+<label for="education3b">Chemistry</label>
+</li>
+<li>
+<input type="checkbox" id="education3c" name="education" value="education3c">
+<label for="education3c">Earth sciences</label>
+</li>
+<li>
+<input type="checkbox" id="education3d" name="education" value="education3d">
+<label for="education3d">Physics</label>
+</li>
+<li>
+<input type="checkbox" id="education3e" name="education" value="education3e">
+<label for="education3e">Space sciences</label>
+</li>
+<li>
+<input type="checkbox" id="education3f" name="education" value="education3f">
+<label for="education3f">Other (please specify)</label>
+</li>

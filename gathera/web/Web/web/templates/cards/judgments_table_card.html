@@ -1,0 +1,39 @@
+<h2 class="text-dark mb-1">Reviewed Documents</h2>
+<span class="text-muted">Details of documents reviewed for this session.</span>
+<div class="row mt-4 mb-1">
+  <div class="col-md-12">
+    <table class="table table-borderless">
+      <thead>
+      <tr>
+        <th>Type</th>
+        <th>CAL</th>
+        <th>Search</th>
+        <th>All</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th scope="row"><span
+          class="badge badge-highlyRelevant">Highly {% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</span></th>
+        <td>{{ total_highlyRelevant_CAL }}</td>
+        <td>{{ total_highlyRelevant_search }}</td>
+        <td>{{ total_highlyRelevant_CAL|add:total_highlyRelevant_search }}</td>
+      </tr>
+      <tr>
+        <th scope="row"><span
+          class="badge badge-relevant">{% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</span></th>
+        <td>{{ total_relevant_CAL }}</td>
+        <td>{{ total_relevant_search }}</td>
+        <td>{{ total_relevant_CAL|add:total_relevant_search }}</td>
+      </tr>
+      <tr>
+        <th scope="row"><span
+          class="badge badge-nonRelevant">Non {% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</span></th>
+        <td>{{ total_nonrelevant_CAL }}</td>
+        <td>{{ total_nonrelevant_search }}</td>
+        <td>{{ total_nonrelevant_CAL|add:total_nonrelevant_search }}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

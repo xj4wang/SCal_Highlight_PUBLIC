@@ -1,0 +1,101 @@
+<div class="modal" id="documentModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-xlg" role="document">
+    <div class="modal-content">
+      <div class="modal-header pb-0">
+        <div class="document-header highlight-include d-flex flex-grow-1" style="min-height: 5rem;">
+          <div id="docViewDocIndicator" class="align-self-center align-self-stretch p-2" style="border-width: 0.25rem!important; border-style: none none none solid; border-color: #DEE2E6;"></div>
+          <div class="align-self-center py-2">
+            <h3 class="document-title-font-family" id="docViewDocTitle" style="margin-bottom: 0;"></h3>
+            <code id="docViewDocMeta" class="text-muted smallDocumentIndicatorSelector"></code>
+          </div>
+          <button id="docViewDocCloseButton" type="button" class="align-self-center close ml-auto d-none" style="font-size: medium;min-width: 4rem;" aria-label="Close Document">
+            <span aria-hidden="true">Close ×</span>
+          </button>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-8">
+            <div class="card border-0">
+              <div class="card-block highlight-include" id="docView" data-doc-id="" style="padding: 0rem !important;">
+                <span id="docViewDocMessage" class="docView-default-font-family p-4 my-3 highlight-exclude"></span>
+                <div class="document-body" id="docViewDocWrapper">
+                  <div class="card border-0 {% if not request.user.current_session.is_summary %}d-none{% endif %}">
+                    <div class="card-body">
+                      <div class="d-flex w-50 justify-content-between font-sans text-primary mb-3 border-bottom highlight-exclude unselectable" unselectable="on">
+                        <small class="highlight-exclude">Summary</small>
+                      </div>
+                      <div id="docViewDocSnippet"></div>
+                    </div>
+                  </div>
+                  {% if request.user.current_session.show_full_document_content and request.user.current_session.strategy != 'doc' %}
+                    <div class="row mt-3">
+                      <div class="col-12">
+                        <a id="docViewDocShowFullDocumentButton"
+                           class="btn btn-sm btn-block btn-outline-secondary font-sans highlight-exclude" href="#"
+                           onclick="return show_full_doc();">Show full document</a>
+                      </div>
+                    </div>
+                  {% endif %}
+                  <div class="card border-0">
+                    <div class="card-body py-0">
+                      <div class="d-flex w-50 justify-content-between font-sans text-primary mb-3 border-bottom highlight-exclude unselectable" unselectable="on">
+                        <small class="highlight-exclude">Document content</small>
+                      </div>
+                      <div id="docViewDocBody"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 d-none d-sm-block">
+            <div class="sticky-top card border-0 mr-2" style="top:75px; z-index: 0;">
+              <div class="card-body p-0 mt-3">
+                <h5 class="card-title text-secondary mb-0 unselectable" unselectable="on">Judge Document</h5>
+                <div class="small"><code id="docno_text">Docid: </code><code id="docViewDocID"></code></div>
+
+                <div class="text-left">
+                  <div class="btn-group mt-3 judging-criteria-btn-group" role="group" data-doc-id="">
+                    <a href="#" data-dismiss="modal" class="btn btn-sm btn-outline-secondary d-flex align-items-center docViewDocNonRelButton">Not {% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</a>
+                    <a href="#" data-dismiss="modal" class="btn btn-sm btn-outline-secondary d-flex align-items-center docViewDocRelButton">{% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</a>
+                    <a href="#" data-dismiss="modal" class="btn btn-sm btn-outline-secondary d-flex align-items-center docViewDocHRelButton">Highly {% if main_judging_criteria_name %}{{ main_judging_criteria_name }}{% else %}Relevant{% endif %}</a>
+                  </div>
+
+                  {% if additional_judging_criteria %}
+                  <h5 class="card-title text-secondary mt-4 mb-1 unselectable" unselectable="on">Additional Criteria <a class="badge badge-secondary float-right shadow-none small" data-toggle="modal" data-target="#additionalJudgingCriteriaModal" href="#"><i class="fas fa-info-circle"></i> Learn more</a></h5>
+                  {% include 'cards/configurable_criteria_card.html' %}
+                  {% endif %}
+                </div>
+
+                <div id="highlighted_words">
+                  <h5 class="card-title text-secondary mt-4 unselectable" unselectable="on">Highlighted terms <span class="badge badge-secondary float-right">Beta</span></h5>
+                  <div class="input-group mb-3">
+                    <input id="search_content" autocomplete="off" type="search" class="form-control search-input bg-light text-dark no-border shadow-none" placeholder="Highlight">
+
+                    <div class="input-group-append">
+                      <button class="btn btn-sm btn-light" data-search="next" id="searchNext"
+                           type="button">&darr;</button>
+                      <button class="btn btn-sm btn-light" data-search="prev" type="button">&uarr;</button>
+                      {%comment%}<button class="btn btn-sm btn-light" data-search="clear" type="button">&times;</button>{%endcomment%}
+                    </div>
+                  </div>
+                  <ul class="list-group" id="highlighted_terms_list"></ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

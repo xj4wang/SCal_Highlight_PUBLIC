@@ -1,0 +1,38 @@
+{% load crispy_forms_tags %}
+
+<div class="modal" id="shareSessionModal" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="d-flex flex-row">
+          <div class="d-flex flex-column flex-grow-1 ">
+            <h5 class="text-primary">Share Session</h5>
+            <h6 class="text-secondary" id="shareSessionModalTitle">{{ user.current_session.topic.title }}</h6>
+            <h6 class="text-muted small">Sharing a session with other users enables collaboration in finding relevant
+            documents.</h6>
+            </div>
+        </div>
+
+        <button type="button" class="close" data-dismiss="modal"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="{% url 'core:share_session' %}" method="POST">
+        <div class="modal-body">
+          {% csrf_token %}
+          {{ share_session_form|crispy }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary"
+                  data-dismiss="modal">Close
+          </button>
+          <button type="submit" class="btn btn-outline-secondary"
+                  name="share_sessionid" value="{{ user.current_session.uuid }}"
+                  id="shareSessionModalShareButton">Share
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
